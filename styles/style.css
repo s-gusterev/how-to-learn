@@ -1,11 +1,9 @@
+/* ---------- PAGE ---------- */
+
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
   color: #000;
 }
@@ -14,12 +12,13 @@
   margin-bottom: 100px;
 }
 
+/* ---------- HEADER ---------- */
+
 .header {
   display: flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
   background-color: #f2f2f2;
   position: relative;
 }
@@ -30,6 +29,7 @@
   font-size: 102px;
   font-weight: 600;
   width: 730px;
+  margin: 0;
   padding-left: 64px;
   z-index: 3;
 }
@@ -42,6 +42,7 @@
   left: 64px;
   bottom: 30px;
   width: 388px;
+  margin: 0;
   z-index: 4;
 }
 
@@ -69,14 +70,29 @@
   z-index: 1;
 }
 
+/* ---------- LOGO ---------- */
+
+.logo {
+  display: inline-block;
+  width: 183px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
-  width: 183px;
   height: 32px;
   background-image: url(../images/logo_place_header.svg);
 }
+
+.logo_place_footer {
+  height: 35px;
+  background-image: url(../images/logo_place_footer.svg);
+}
+
+/* ---------- DESCRIPTION ---------- */
 
 .description {
   display: flex;
@@ -86,6 +102,8 @@
 .description__two-columns {
   margin-bottom: 100px;
 }
+
+/* ---------- TWO-COLUMNS ---------- */
 
 .two-columns {
   display: flex;
@@ -120,14 +138,11 @@
   margin: 30px 0;
 }
 
-
 .two-column__span-accent {
   font-weight: 700;
 }
 
-/* .digits {
-  margin-bottom: 100px;
-} */
+/* ---------- DIGITS ---------- */
 
 .digits__section-title {
   margin: 0 auto 20px auto;
@@ -141,6 +156,8 @@
   margin: 0 auto 100px;
   padding-top: 60px;
 }
+
+/* ---------- SECTION-* ---------- */
 
 .section-title {
   line-height: 1.15;
@@ -156,7 +173,6 @@
   font-weight: 400;
   text-align: center;
   width: 60%;
-
 }
 
 .section-title_theme_dark {
@@ -169,6 +185,8 @@
   color: #fff;
   margin: 0 auto;
 }
+
+/* ---------- TABLE ---------- */
 
 .table {
   display: flex;
@@ -185,6 +203,13 @@
 
 .table__cell {
   width: 250px;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  color: #fff;
+  margin-right: 0;
+  z-index: 2;
 }
 
 .table__heading {
@@ -206,14 +231,7 @@
   margin-bottom: 20px;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  z-index: 2;
-}
-
+/* ---------- FEYNMAN ---------- */
 
 .feynman {
   background-color: #f2f2f2;
@@ -225,18 +243,6 @@
   background-position: left bottom;
   background-size: 867px 637px;
 }
-
-/* .feynman::after {
-  content:'';
-  position: absolute;
-  width: 867px;
-  height: 637px;
-  left: 0;
-  bottom: 0;
-  background-image: url(../images/feynman.png);
-  background-repeat: no-repeat;
-  z-index: -1;
-} */
 
 .feynman__title {
   line-height: 1.15;
@@ -267,6 +273,8 @@
   text-decoration: none;
 }
 
+/* ---------- KAUFMAN ---------- */
+
 .kaufman {
   position: relative;
   overflow: hidden;
@@ -288,6 +296,8 @@
 .content__kaufman {
   padding-bottom: 90px;
 }
+
+/* ---------- FOOTER ---------- */
 
 .footer {
   min-height: 350px;
@@ -335,7 +345,7 @@
 }
 
 .footer__column-link {
-  color:#fff;
+  color: #fff;
   text-decoration: none;
   line-height: 30px;
   font-size: 18px;
@@ -349,16 +359,4 @@
   width: 16px;
   height: 16px;
   margin-right: 10px;
-}
-
-.logo {
-  display: inline-block;
-}
-
-.logo_place_footer {
-  width: 183px;
-  height: 35px;
-  background-image: url(../images/logo_place_footer.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
