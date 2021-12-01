@@ -50,6 +50,11 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+  transition: opacity 350ms ease;
+}
+
+.header__link:hover{
+  opacity: .7;
 }
 
 .header__main-illustration {
@@ -143,20 +148,7 @@
   font-weight: 700;
 }
 
-/* ---------- DIGITS ---------- */
 
-.digits__section-title {
-  margin: 0 auto 20px auto;
-}
-
-.digits__section-subtitle {
-  margin: 0 auto;
-}
-
-.digits__table {
-  margin: 0 auto 100px;
-  padding: 60px 0 0;
-}
 
 /* ---------- SECTION-* ---------- */
 
@@ -166,6 +158,7 @@
   font-weight: 700;
   text-align: center;
   width: 60%;
+  margin: 0;
 }
 
 .section-subtitle {
@@ -174,6 +167,7 @@
   font-weight: 400;
   text-align: center;
   width: 60%;
+  margin: 0;
 }
 
 .section-title_theme_dark {
@@ -189,6 +183,21 @@
   margin: 0 auto;
   position: relative;
   z-index: 2;
+}
+
+/* ---------- DIGITS ---------- */
+
+.digits__section-title {
+  margin: 0 auto 20px;
+}
+
+.digits__section-subtitle {
+  margin: 0 auto;
+}
+
+.digits__table {
+  margin: 0 auto 100px;
+  padding: 60px 0 0;
 }
 
 /* ---------- TABLE ---------- */
@@ -278,6 +287,15 @@
   font-weight: 400;
   color: #2f80ed;
   text-decoration: none;
+  transition: opacity 350ms ease;
+}
+
+.feynman__link:hover {
+  opacity: .7;
+}
+
+.content__feynman {
+  margin-bottom: 100px;
 }
 
 /* ---------- KAUFMAN ---------- */
@@ -358,6 +376,11 @@
   font-weight: 400;
   display: flex;
   align-items: center;
+  transition: opacity 350ms ease;
+}
+
+.footer__column-link:hover{
+  opacity: .5;
 }
 
 .footer__social-icon {
@@ -393,13 +416,14 @@
 }
 
 .techniques__section-subtitle {
-  width: 920px ;
+  width: 920px;
   margin: 0 auto;
 }
 
 .techniques__cards {
   margin: 0 auto;
 }
+
 /* Cards */
 
 .cards {
@@ -449,5 +473,186 @@
 
 
 /* Video */
+
+.video__section-title {
+  margin: 0 auto 20px;
+}
+
+
+.video__section-subtitle {
+  margin: 0 auto 50px;
+}
+
+.video__iframes {
+  margin: 0 auto;
+  max-width: 1055px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+  /* flex-basis: 515px; */
+  /* display: block; */
+}
+
+/* .video__iframe:not(:nth-of-type(2n)) {
+  margin-right: 20px;
+} */
+
+/* Oakley */
+.oakley {
+  background-color: #f2f2f2;
+}
+
+
+.content__oakley {
+  padding-top: 120px;
+  position: relative;
+}
+
+.content__oakley::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  top: -40px;
+  left: 0;
+  z-index: -1;
+  background-color: #f2f2f2;
+}
+
+.oakley__two-columns {
+  margin: 0 auto;
+}
+
+.oakley__paragraph {
+  max-width: 1015px;
+}
+
+/* Khan */
+
+.khan {
+  background-color:#f2f2f2;
+}
+
+.khan__container {
+  width: 80%;
+  margin: 0 auto;
+}
+.content__khan {
+ padding-top: 105px;
+ /* margin: 0 auto; */
+}
+
+.khan__author {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.khan__title {
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 600;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.khan__quote {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+  max-width: 790px;
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+.khan__quote-author {
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.khan__quote-author-subline{
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 68px;
+}
+
+.khan__buy-link {
+  font-size: 30px;
+  line-height: 1.15;
+  font-weight: 400;
+  text-decoration: none;
+  color: #2f80ed;
+  transition: opacity 350ms ease;
+}
+
+.khan__buy-link:hover {
+  opacity: .7;
+}
+
+.khan__book-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.khan__book-pic {
+  width: 608px;
+  height: 620px;
+  object-fit: cover;
+  object-position: top;
+  margin-right: 48px;
+}
+
+/* Resources */
+.resources {
+  background-color:#f2f2f2;
+}
+.content__resources {
+  padding-top: 100px;
+  padding-bottom: 217px;
+}
+.resources__section-title {
+margin: 0 auto 20px;
+}
+.resources__section-subtitle {
+  margin: 0 auto 80px;
+}
+
+.resources__logo-zone {
+  width: 1100px;
+  margin: 0 auto;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resources__item {
+  width: 270px;
+  height: 38px;
+}
+
+.resources__logo {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+  transition: opacity 250ms ease;
+}
+.resources__logo:hover {
+  opacity: .5;
+}
+
 
 
