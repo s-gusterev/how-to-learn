@@ -5,10 +5,10 @@
 .content__oakley::before {
   content: '';
   position: absolute;
-  width: 100%;
-  height: 40px;
   top: -40px;
   left: 0;
   z-index: -1;
+  width: 100%;
+  height: 40px;
   background-color: #f2f2f2;
 }
