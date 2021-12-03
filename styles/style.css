@@ -304,6 +304,7 @@
   position: relative;
   overflow: hidden;
   background-color: #1f1f1f;
+  padding-bottom: 90px;
 }
 
 .kaufman__triangle {
@@ -488,7 +489,7 @@
 
 .video__iframes {
   margin: 0 auto;
-  max-width: 1055px;
+  /* max-width: 1055px; */
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -508,12 +509,13 @@
 
 /* Oakley */
 .oakley {
+  padding-top: 120px;
   background-color: #f2f2f2;
 }
 
 
 .content__oakley {
-  padding-top: 120px;
+  /* padding-top: 120px; */
   position: relative;
 }
 
@@ -539,6 +541,7 @@
 /* Khan */
 
 .khan {
+  padding-top: 105px;
   background-color: #f2f2f2;
 }
 
@@ -547,10 +550,10 @@
   margin: 0 auto;
 }
 
-.content__khan {
+/* .content__khan {
   padding-top: 105px;
-  /* margin: 0 auto; */
-}
+  margin: 0 auto;
+} */
 
 .khan__author {
   font-size: 30px;
@@ -620,13 +623,15 @@
 
 /* Resources */
 .resources {
+  padding-top: 100px;
+  padding-bottom: 217px;
   background-color: #f2f2f2;
 }
 
-.content__resources {
+/* .content__resources {
   padding-top: 100px;
   padding-bottom: 217px;
-}
+} */
 
 .resources__section-title {
   margin: 0 auto 20px;
