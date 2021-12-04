@@ -4,8 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./vendor/normalize.css">
-  <!-- <link rel="stylesheet" href="./styles/style.css"> -->
   <link rel="stylesheet" href="./pages/index.css">
   <title>Научиться учиться</title>
 </head>
@@ -80,12 +78,21 @@
       <section class="video">
         <h2 class="section-title video__section-title">Видео на TED</h2>
         <p class="section-subtitle video__section-subtitle">Для тех, кто любит прокрастинировать</p>
-        <div class="video__iframes">
-          <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen>
-          </iframe>
-          <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen>
-          </iframe>
-        </div>
+        <ul class="video__iframes">
+          <li class="video__iframes-item">
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU"
+              allowfullscreen>
+            </iframe>
+          </li>
+          <li class="video__iframes-item">
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY"
+              allowfullscreen>
+            </iframe>
+          </li>
+
+
+
+        </ul>
       </section>
       <!-- End Video -->
       <!-- Start Oakley -->
@@ -93,7 +100,7 @@
         <div class="two-columns oakley__two-columns">
           <h2 class="two-columns__brief">История Барбары Оакли.</h2>
           <div class="two-columns__main-text">
-            <p class="two-columns__paragraph oakley__paragraph">С детства Барбаре не давалась математика. Она считала
+            <p class="two-columns__paragraph">С детства Барбаре не давалась математика. Она считала
               себя
               законченным
               гуманитарием, причём далеко не самым умным. В армии она изучала русский язык, чтобы получить надбавку, да
@@ -162,7 +169,7 @@
             миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду
             смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.
           </p>
-          <p class="khan__quote-author">Джордж Лукас</p>
+          <h3 class="khan__quote-author">Джордж Лукас</h3>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img src="./images/khan-book.jpg" alt="Обложка книги - Весь мир - школа" class="khan__book-pic">
@@ -276,7 +283,7 @@
             <li class="footer__column-item"><a href="#" class="footer__column-link">Наставники</a></li>
           </ul>
         </nav>
-        <div class="footer__column footer__column_content_social">
+        <nav class="footer__column footer__column_content_social">
           <h3 class="footer__column-heading">Соцсети</h3>
           <ul class="footer__column-links">
             <li class="footer__column-item">
@@ -292,7 +299,7 @@
                   src="./images/instagram_color_white.svg" alt="Инстаграм">Instagram</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </footer>
     <!-- End Footer -->

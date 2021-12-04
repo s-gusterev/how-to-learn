@@ -5,4 +5,6 @@
   flex-wrap: wrap;
   max-width: 1055px;
   margin: 0 auto;
+  padding-left: 0;
+  list-style: none;
 }
